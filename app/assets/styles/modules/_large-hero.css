@@ -1,0 +1,55 @@
+.large-hero {
+	position: relative;
+	
+	&__text-content {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 0;
+		width: 100%;
+		text-align: center;		
+	}
+
+	&__title {
+		font-weight: 300;
+		color: $mainBlue;
+		font-size: 4.8rem;
+		margin: 0;
+	}
+
+	&__subtitle {
+		font-weight: 300;
+		color: $mainBlue;
+		font-size: 2.9rem;
+		margin: 0;
+	}
+	
+	&__description {
+		color: #FFF;
+		font-size: 1.875rem;
+		font-weight: 100;
+		text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
+		max-width: 30rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+
+/*  BEM
+	Block - an independent reusable part of our design.
+	Element - belongs to a block.
+	Modifier - can be used on a block or an element to indicate a change to the default state.
+	
+	CSS selectors should target elements directly with classes, instead of relying on type selectors, descendent selectors, and the cascade.
+	
+	REM  Font size:  Everything is relative to the root of the page - or 'html' element.
+		 Default Font size on HTML is 16px.  1 REM = 16px.  1.5REM = 24px.
+		 We use REM so when people change the font size on their browser... this font changes with it.
+		 ...we want to honor users font size preferances.  With Pixels... sizes are set in stone.	
+	
+	
+.large-hero h1 {
+	font-weight: 300;
+}
+*/
